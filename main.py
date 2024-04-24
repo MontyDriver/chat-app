@@ -35,10 +35,10 @@ def home():
 
         # Input validation
         if not username:
-            return render_template("home.html", error="Please enter a username", code=code, username=username)
+            return render_template("home.html", error="please enter a username", code=code, username=username)
         
         if join != False and not code:
-            return render_template("home.html", error="Please enter a room code", code=code, username=username)
+            return render_template("home.html", error="please enter a room code", code=code, username=username)
         
         room = code
 
