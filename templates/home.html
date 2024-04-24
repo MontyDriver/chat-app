@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+<!-- Anything written between block content and endblock is unique to the "home.html" page -->
+{% block content %} 
+<form method="post" class="buttons">
+
+    {% if error %}
+    <div class="error">
+        <p>{{error}}</p>
+    </div>
+    {% endif %}
+    <h3 class="title">Chat App</h3>
+    <div>
+        <label>Username:</label>
+        <input type="text" placeholder="Enter a username" name="username" value="{{username}}"/>
+    </div>
+    <div class="join">
+        <input type="text" placeholder="Room Code" name="code" value="{{code}}"/>
+        <button type="submit" name="join">Join a Room</button>
+    </div>
+    <button type="submit" name="create" class="create-btn">Create a Room</button>
+
+    <p class="credits"><i>Chat app to communicate with friends</i></p>
+
+</form>
+{% endblock %}

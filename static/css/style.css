@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; /* Base font size */
+    color: #343A40; /* Dark grey for text */
+    background-color: #F8F9FA; /* Light grey background */
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+    color: #007BFF; /* Vibrant blue for headings */
+}
+
+.error {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fff; /* White text in error boxes for contrast */
+    background-color: #DC3545; /* Red for errors */
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.content {
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    color: #007BFF; /* Consistent color for titles */
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 40%;
+    border: none; /* Remove border for a cleaner look */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for the button section */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+h3.title {
+    margin-bottom: 0; /* Removes the bottom margin from the h3 element */
+}
+
+form {
+    margin-top: 0; /* Removes the top margin from the form element */
+}
+
+.buttons {
+    padding-top: 0; /* Adjusts the padding at the top of the buttons container */
+}
+
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition for color and transform */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.join {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.create-btn {
+    width: 30%; /* Suitable width on large screens */
+}
+
+.credits {
+    padding-top: 1vh;
+}
+
+/* Chatroom styling */
+.message-box {
+    background-color: #ffffff; /* White background for readability */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    align-items: stretch;
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 10px;
+}
+
+.messages {
+    overflow-y: scroll;
+    flex: 1;
+    width: 100%;
+}
+
+.inputs {
+    padding: 20px;
+    display: flex;
+}
+
+#message {
+    flex: 1;
+    border: 1px solid #ced4da; /* Subtle border for input */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.muted {
+    font-size: 1rem;
+    color: darkgray;
+}
