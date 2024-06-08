@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 {% block content %} 
 <div class="message-box">
-    <h2>Room Code: {{code}}</h2>
+    <h2 id="room-code-title">Room Code: {{code}}</h2>
 
     <!-- Empty div for messages-->
     <div class="messages" id="messages"></div>
 
     <div class="inputs">
         <input type="text" rows="3" placeholder="Message" name="message" id="message">
-        <button type="button" name="send" id="send-btn" onClick="sendMessage();">Send</button>
+        <button type="button" class="fa fa-paper-plane-o" name="send" id="send-btn" onClick="sendMessage();"></button>
     </div>
 
-    <button type="button" class="main-menu-btn" onclick="returnToMainMenu();">Return to Main Menu</button>
+    <button type="button" class="fa-solid fa-angles-left" onclick="returnToMainMenu();"></button>
 </div>
 
 <script type="text/javascript">
